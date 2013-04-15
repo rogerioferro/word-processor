@@ -1,8 +1,4 @@
 body {
-  /*
-  font-family: sans-serif;
-  background-image: url("../img/background.png");
-  */
 	background-color:#ebebeb;
 	outline: none;
 }
@@ -25,71 +21,4 @@ h3 { font-size: 132%; }
 h4 { font-size: 116%; }
 h5 { font-size: 100%; }
 h6 { font-size: 80%;  }
-
-::-webkit-scrollbar-thumb {
-background-color: rgba(0,0,0,.2);
-background-clip: padding-box;
-border: solid transparent;
-border-width: 1px 1px 1px 6px;
-min-height: 28px;
-padding: 100px 0 0;
-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
-}
-
-#test-bar {
-  
-  background-color: #aaaaaa;
-  border-color: #000000;
-  border-style: solid;
-  border-width: 1px;
-}
-
-#ruler {
-  width: 500px;
-  height: 15px;
-
-  position: relative;
-  
-  background-color: white;
-
-  margin-top: 15px;
-  margin-bottom: 8px;
-  /* to centre page on screen*/
-  margin-left: auto;
-  margin-right: auto;  
-  
-  border-color: rgba(0,0,0,.1);
-  border-style: solid;
-  border-width: 1px;
-  
-  font-size: 70%;
-  text-align:center;
-  
-}
-
-.sheet {
-  width: 500px;
-  height: 300px;
-  
-  position: relative;
-  
-  margin-top: 0px;
-  margin-bottom:5px;
-  /* to centre page on screen*/
-  margin-left: auto;
-  margin-right: auto;  
-  /*--*/
-  
-  background-color: white;
-  
-  border-color: rgba(0,0,0,.2);
-  border-style: solid;
-  border-width: 1px;
-
-  /*
-  box-shadow: 5px 5px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
-  -moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
-  /**/
-}
 

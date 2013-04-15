@@ -3,73 +3,23 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Getting Started with Aloha Editor</title>
+	<title>Word Processor Layout Test</title>
 	<link rel="stylesheet" href="./css/word.css" type="text/css">
-	<!-- <script src="./js/vendor/require.js"></script> -->
 	<script src="./js/vendor/jquery-1.9.1.min.js"></script>
+	<script src="./js/wp.js"></script>
 
 </head>
 
 <body>
 
+<div id="wp1" class="wp-editor"> </div>
+
 <script>
-
-function set_page_size ( width, height)
-{
-	var w = width.toString()+"px";
-	var h = height.toString()+"px";
-
-	$('.sheet').css({"width" : w,"height" : h});
+	wp.ready( function(){
+		wp_show_test_bar("wp1");
+	});
 	
-	var ruler  = document.getElementById('ruler');
-	ruler.style.width = w;
-	
-}
-
-function set_page_color (color)
-{
-	$('.sheet').css({"background-color" : color});
-}
-
-function apply_change ()
-{
-	var color = document.getElementById('i-color');
-	var width  = document.getElementById('i-width');
-	var height = document.getElementById('i-height');
-	
-	set_page_size (width.value, height.value);
-	set_page_color (color.value);
-}
-
-function add_page()
-{
-	var page=document.createElement("div");
-	var node=document.createTextNode("New Page...");
-	page.appendChild(node);
-	page.setAttribute("class", "sheet");
-	
-	var element = document.getElementById("pages");
-	element.appendChild(page);
-	
-	apply_change ();
-}
-
-
 </script>
-
-<div id="test-bar">
-	Width: <input id="i-width" type="number" value="500" >
-	Height: <input id="i-height" type="number" value="300">
-	Color: <input id="i-color" type="color" value="#ffffff">
-	<button type="button" onclick="apply_change()"> Apply </button>
-	<button type="button" onclick="add_page()"> Add Page </button>
-</div>
-
-<div id="ruler"> to put the ruler here </div>
-
-<div id="pages">
-	<div id="sheet1" class="sheet"> This is some content </div>
-</div>
 
 </body>
 
